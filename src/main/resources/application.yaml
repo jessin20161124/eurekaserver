@@ -1,0 +1,10 @@
+server:
+  port: 8000 #端口号
+eureka:
+  instance:
+    hostname: localhost #主机名称
+  client:
+    registerWithEureka: false #不向注册中心注册自己，因为自己本身就是注册中心。默认为true
+    fetchRegistry: false #不去从eureka中获取注册表信息，因为自己的功能是管理和维护各个服务，默认为true
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ #与eureka进行通信的URL，多个以逗号分隔（URL带有协议，主机，端口，上下文）
