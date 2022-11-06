@@ -2,7 +2,7 @@
 
 ### 切到根目录构建镜像
 ```
- docker build -t eurekaserver:0.1.0 .
+docker build -t eurekaserver:0.1.0 .
 ```
 
 ### 运行
